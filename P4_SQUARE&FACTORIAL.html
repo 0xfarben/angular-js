@@ -33,13 +33,18 @@
     </head>
 
     <body ng-app="mySqFct">
+
         <h1>AngularJS Factorial and Square Application</h1>
+
         <div ng-controller="mySqFctCntrl">
+            
             Enter the Number:<input type="number" ng-model="num">
+
             <button ng-click="factorial()">Compute Factorial</button>
             <button ng-click="square()">Compute Square</button>
-                <br>
-                <b>{{result}}</b>
+
+            <br>
+            <b>{{result}}</b>
                 
         </div>
     </body>
