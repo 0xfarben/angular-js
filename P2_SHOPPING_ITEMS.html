@@ -1,5 +1,4 @@
-<!DOCTYPEhtml>
-    <html>
+<html>
     <title>
         Shopping Items Application
     </title>
@@ -24,7 +23,7 @@
                     }
                 }
                 $scope.removeItem = function () {
-                    //console.log("function called")
+                    
                     if ($scope.shoppingItems.indexOf($scope.selectItem) == -1) {
                         alert("Please select an item to remove")
                     }
@@ -52,17 +51,21 @@
                     <td>{{items}}</td>
                 </tr>
             </table>
+
             <br />
+
             <div>
                 Enter an Item to Add:<input type="text" ng-model="newItem">
                 <button ng-click="addItem()">Add Item</button>
             </div>
+
             <div>
-                SelectanItemtoRemove:
+                Select a nItem to Remove:
                 <select ng-model="selectItem" ng-options="item for item in shoppingItems"></select>
                 <button ng-click="removeItem()">RemoveItem</button>
             </div>
+
         </div>
     </body>
 
-    </html>
+</html>
